@@ -1,51 +1,68 @@
 # thomaswhite246.github.io
-DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Audio PONG</title>
-    <script src="../javascript/Tone.js"></script>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./pong-styles.css"/>
+export class Game {
+  constructor(
+    size,
+    padding,
+    htmlElement,
+    mousePosition,
+    mute,
+    volume,
+    computerstate,
+    computerDifficulty,
+    computerDifficultySpeed
+  ) {
+    this.size = { x: 600, y: 500 }; //container for entire game
+    this.padding = { x: 10, y: 10 }; //white space inside game border
+    this.htmlElement = null; //element on HTML page
+    this.mousePosition = { x: 0, y: 0 };
+    this.mute = false; //default mute state
+    this.volume = 6; //default volume output 0-10
+    this.computerState = 0; //default computer control amount
+    this.computerDifficulty = ["off", "easy", "medium", "hard", "impossible"]; //sets the computer difficulty names
+    this.computerDifficultySpeed = [0, 2, 4, 8, 100]; //sets the computer difficulty speeds
+  }
+}
 
-  </head>
+export class Ball {
+  constructor(
+    size,
+    position,
+    direction,
+    interval,
+    acceleration,
+    initial,
+    intertialTransfer,
+    htmlElement
+  ) {
+    this.size = { x: 20, y: 20 }; // default ball size
+    this.position = { x: 50, y: 50 }; // default ball position
+    this.direction = { x: 5, y: 0 }; //Ball speed when game starts
+    this.acceleration = 0; //X speed multipler on successful block
+    this.initial = { x: 2, y: 0 }; //speed reset on point score
+    this.maximum = { x: 20, y: 10 }; //maximum speed
+    this.inertialTransfer = 0.25; //multiplier for velocity.y transfer from paddle
+    this.htmlElement = null; //element on HTML page
+  }
+}
 
-  <body><center>
-    <p>This is a generic PONG written in javascript, html, and css. The up and down arrows control the paddle on the right; w + s control the paddle on the left.</p>
-    <div id="game">
-      <div class="paddle" id="left-paddle"></div>
-      <div class="paddle" id="right-paddle"></div>
-      <div class="ball" id="ball"></div>
-      <h1 class="score" id="left-score">0</h1>
-      <h1 class="score" id="right-score">0</h1
-    </div>
-
-    <div id="instructions">
-      <p>
-        <strong><span style="text-decoration:underline;">INSTRUCTIONS:</span></strong><br/>
-        <strong>W/S</strong> – move left paddle up/down<br/>
-        <strong>cursor up/down</strong> – move right paddle up/down</br>
-        <strong>R</strong> - reset</br>
-        <strong>1</strong> – cycle right paddle computer control</br>
-        <strong>2</strong> – toggle left paddle mouse control</br>
-        <strong>M</strong> – toggle mute sound</br>
-        <strong>N/B</strong> – volume up/down (0–10)</br></br>
-
-      </p>
-    </div>
-    <div id="errors-debug">
-      Computer control is <span id="computer-control-state">OFF</span><br/>
-      Mouse control is <span id="mouse-control-state">OFF</span></br>
-      Mute is <span id="mute-state">false</span><br/>
-      Volume is <span id="volume-state">5</span> out of 10<br/><br/>
-      ERRORS:<br/>
-      <p id="errors"></p>
-      DEBUG:<br/>
-      <p id="debug"></p>
-    </div>
-    <script type="module" src="../javascript/pong-audio.js"></script>
-    <script type="module" src="../javascript/pong-classes.js"></script>
-    <script type="module" src="../javascript/pong-events.js"></script>
-    <script type="module" src="../javascript/pong-util.js"></script>
-    <script type="module" src="../javascript/pong-index.js"></script>
-</center>  </body>
-</html>
+export class Paddle {
+  constructor(
+    size,
+    position,
+    oldPosition,
+    direction,
+    velocity,
+    speed,
+    hasHit,
+    htmlElement
+  ) {
+    this.size = { x: 10, y: 75 }; //default paddle size
+    this.position = { x: 50, y: 50 }; //paddle position, (Y is top)
+    this.oldPosition = { x: 50, y: 50 }; //paddle position 1 frame ago
+    this.velocity = { x: 0, y: 0 }; //calculated velocity
+    this.direction = { x: 0, y: 0 }; //position offset
+    this.speed = 10; //rate that paddle moves with keyboard
+    this.hasHit = false; //keep track of wheter paddle hit ball or not
+    this.htmlElement = null; //element on HTML page
+  }
+}
