@@ -87,7 +87,7 @@ function gameProcess() {
     wallSound.play();
   }
   if (ballHitPaddle.state) {
-    paddleSound.play(tap-resonant.mp3);
+    paddleSound.play();
   }
   if (leftScoreHit.state) {
     scoreSound.play();
