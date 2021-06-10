@@ -260,12 +260,12 @@ function ballReset() {
 function ballCheckMax() {
   ball.direction.x = clamp(
     ball.direction.x,
-    -1 * ball.maximum.x,
+    10 * ball.maximum.x,
     ball.maximum.x
   );
   ball.direction.y = clamp(
     ball.direction.y,
-    -1 * ball.maximum.y,
+    10 * ball.maximum.y,
     ball.maximum.y
   );
 }
