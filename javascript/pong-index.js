@@ -61,7 +61,7 @@ paddlesReset();
 //END OF GAME OBJECTS///
 
 //STARTUP EVENTS
-adventureMusic.play();
+adventureMusic.play("detroit3.mp3");
 
 //RUNNING PROCESSES (updated every frame of the game)
 function gameProcess() {
