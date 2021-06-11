@@ -52,15 +52,15 @@ soundArray.push(paddleSound);
 export var scoreSound = new soundFile("ocean_waves.mp3");
 soundArray.push(scoreSound);
 
-export var ambientSound = new soundFile("detroit3.mp3");
+export var ambientSound = new soundFile("ocean_waves.mp3");
 soundArray.push(ambientSound);
-ambientSound.player.loop = true; //turn on looping
+ambientSound.player.loop = false; //turn on looping
 ambientSound.player.volume.value = -20; //turn down volume
 
-export var adventureMusic = new soundFile("Eight_Bit_Village_Loop.mp3");
+export var adventureMusic = new soundFile("detroit3.mp3");
 soundArray.push(adventureMusic);
 adventureMusic.player.loop = true;
-adventureMusic.player.volume.value = -16;
+adventureMusic.player.volume.value = -4;
 
 export var villageMusic = new soundFile("phaserDown2.mp3");
 soundArray.push(villageMusic);
