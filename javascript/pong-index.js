@@ -61,7 +61,7 @@ paddlesReset();
 //END OF GAME OBJECTS///
 
 //STARTUP EVENTS
-ambientSound.play();
+ambientSound.player.loop = true;
 
 //RUNNING PROCESSES (updated every frame of the game)
 function gameProcess() {
