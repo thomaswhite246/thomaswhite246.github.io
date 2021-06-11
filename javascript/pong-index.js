@@ -61,7 +61,7 @@ paddlesReset();
 //END OF GAME OBJECTS///
 
 //STARTUP EVENTS
-adventureMusic.play("detroit3.mp3");
+ambientSound.play();
 
 //RUNNING PROCESSES (updated every frame of the game)
 function gameProcess() {
@@ -74,7 +74,7 @@ function gameProcess() {
     leftScoreHigher.turnOn();
   }
 
-  adventureMusic.player.playbackRate = scalerange(
+  ambientSound.player.playbackRate = scalerange(
     Math.abs(ball.direction.x),
     0,
     5,
