@@ -98,11 +98,11 @@ function gameProcess() {
   //this is a persistant event so it must be checked and checked if it changed
   if (rightScoreHigher.state && rightScoreHigher.changed) {
     adventureMusic.play();
-    villageMusic.stop();
+    villageMusic.pause();
   }
   if (leftScoreHigher.state && leftScoreHigher.changed) {
     villageMusic.play();
-    adventureMusic.stop();
+    adventureMusic.pause();
   }
 }
 
