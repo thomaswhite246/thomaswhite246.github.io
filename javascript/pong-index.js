@@ -16,9 +16,9 @@ import {
   adventureMusic,
   villageMusic,
   playDeferredSounds
-} from "./apong-audio.js";
+} from "./pong-audio.js";
 //Defaults for game objects
-import { Game, Ball, Paddle } from "./bpong-classes.js";
+import { Game, Ball, Paddle } from "./pong-classes.js";
 //Game Events
 import {
   GameEvent,
@@ -34,9 +34,9 @@ import {
   muteControl,
   volumeUpControl,
   volumeDownControl
-} from "./bpong-events.js";
+} from "./pong-events.js";
 //Utility functions
-import { clamp, scalerange, randomAdjust, boolToOnOff } from "./bpong-util.js";
+import { clamp, scalerange, randomAdjust, boolToOnOff } from "./pong-util.js";
 //import * as Tone from "../lib/Tone.js";
 
 //GAME OBJECTS///DON'T CHANGE THESE
