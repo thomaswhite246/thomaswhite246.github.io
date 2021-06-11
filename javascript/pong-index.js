@@ -16,9 +16,9 @@ import {
   adventureMusic,
   villageMusic,
   playDeferredSounds
-} from "./pong-audio.js";
+} from "./apong-audio.js";
 //Defaults for game objects
-import { Game, Ball, Paddle } from "./pong-classes.js";
+import { Game, Ball, Paddle } from "./bpong-classes.js";
 //Game Events
 import {
   GameEvent,
@@ -34,9 +34,9 @@ import {
   muteControl,
   volumeUpControl,
   volumeDownControl
-} from "./pong-events.js";
+} from "./bpong-events.js";
 //Utility functions
-import { clamp, scalerange, randomAdjust, boolToOnOff } from "./pong-util.js";
+import { clamp, scalerange, randomAdjust, boolToOnOff } from "./bpong-util.js";
 //import * as Tone from "../lib/Tone.js";
 
 //GAME OBJECTS///DON'T CHANGE THESE
@@ -442,3 +442,4 @@ function setVolume(x) {
   if (!game.mute)
     Tone.Master.volume.value = scalerange(game.volume, 0, 10, -40, 0); //scale to dB
 }
+
