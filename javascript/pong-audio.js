@@ -52,7 +52,7 @@ soundArray.push(paddleSound);
 export var scoreSound = new soundFile("ocean_waves.mp3");
 soundArray.push(scoreSound);
 
-export var ambientSound = new soundFile("detroit.wav");
+export var ambientSound = new soundFile("detroit2.wav");
 soundArray.push(ambientSound);
 ambientSound.player.loop = true; //turn on looping
 ambientSound.player.volume.value = -20; //turn down volume
