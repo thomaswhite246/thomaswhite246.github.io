@@ -53,7 +53,7 @@ export var scoreSound = new soundFile("ocean_waves.mp3");
 soundArray.push(scoreSound);
 
 export var ambientSound = new soundFile();
-soundArray.push(ambientSound);
+soundArray.push();
 ambientSound.player.loop = true; //turn on looping
 ambientSound.player.volume.value = Number.NEGATIVE_INFINITY; //turn down volume
 
