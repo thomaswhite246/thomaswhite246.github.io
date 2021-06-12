@@ -55,7 +55,7 @@ soundArray.push(scoreSound);
 export var ambientSound = new soundFile("Adventure_Meme.mp3");
 soundArray.push(ambientSound);
 ambientSound.player.loop = true; //turn on looping
-ambientSound.player.volume.value = -40; //turn down volume
+ambientSound.player.volume.value = -4; //turn down volume
 
 export var adventureMusic = new soundFile("detroit3-loop.mp3");
 soundArray.push(adventureMusic);
