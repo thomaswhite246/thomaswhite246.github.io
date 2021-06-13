@@ -54,19 +54,15 @@ soundArray.push(scoreSound);
 
 export var ambientSound = new soundFile("silence.mp3");
 soundArray.push(ambientSound);
-ambientSound.player.loop = false; //turn on looping
+ambientSound.player.loop = true; //turn on looping
 ambientSound.player.volume.value = -20; //turn down volume
 
-export var scoreSound1 = new soundFile("silence.mp3");
-soundArray.push(scoreSound1);
+export var adventureMusic = new soundFile("detroit3-loop.mp3");
+soundArray.push(adventureMusic);
+adventureMusic.player.loop = true;
 adventureMusic.player.volume.value = -16;
 
-export var scoreSound2 = new soundFile("silence.mp3");
-soundArray.push(scoreSound2);
+export var villageMusic = new soundFile("silence.mp3");
+soundArray.push(villageMusic);
 villageMusic.player.loop = true;
 villageMusic.player.volume.value = -16;
-
-export var backgroundMusic = new soundFile("detroit3-loop.mp3");
-soundArray.push(backgroundMusic);
-villageMusic.player.loop = true;
-backgroundMusic.player.volume.value = -4;
