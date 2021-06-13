@@ -13,6 +13,7 @@ import {
   paddleSound,
   scoreSound,
   ambientSound,
+  backgroundSound,
   adventureMusic,
   villageMusic,
   playDeferredSounds
