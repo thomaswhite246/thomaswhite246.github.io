@@ -52,7 +52,7 @@ soundArray.push(paddleSound);
 export var scoreSound = new soundFile("silence.mp3");
 soundArray.push(scoreSound);
 
-export var ambientSound = new soundFile("detroit3-loop.mp3");
+export var ambientSound = new soundFile("silence.mp3");
 soundArray.push(ambientSound);
 ambientSound.player.loop = false; //turn on looping
 ambientSound.player.volume.value = -20; //turn down volume
@@ -65,3 +65,8 @@ export var villageMusic = new soundFile("silence.mp3");
 soundArray.push(villageMusic);
 villageMusic.player.loop = true;
 villageMusic.player.volume.value = -16;
+
+export var backgroundMusic = new soundFile("detroit3-loop.mp3");
+soundArray.push(backgroundMusic);
+villageMusic.player.loop = true;
+backgroundMusic.player.volume.value = -4;
