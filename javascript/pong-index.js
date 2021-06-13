@@ -13,9 +13,8 @@ import {
   paddleSound,
   scoreSound,
   ambientSound,
-  scoreSound1,
-  scoreSound2,
-  backgroundMusic, 
+  adventureMusic,
+  villageMusic,
   playDeferredSounds
 } from "./pong-audio.js";
 //Defaults for game objects
@@ -40,9 +39,6 @@ import {
 import { clamp, scalerange, randomAdjust, boolToOnOff } from "./pong-util.js";
 //import * as Tone from "../lib/Tone.js";
 
-//STARTUP EVENTS
-backgroundMusic.play();
-
 //GAME OBJECTS///DON'T CHANGE THESE
 var updateInterval = 15; //game framerate
 var game = new Game();
@@ -64,6 +60,9 @@ paddleArray.push(paddleRight);
 paddlesReset();
 //END OF GAME OBJECTS///
 
+//STARTUP EVENTS
+ambientSound.play();
+
 //RUNNING PROCESSES (updated every frame of the game)
 function gameProcess() {
   //ambient sound
@@ -75,7 +74,7 @@ function gameProcess() {
     leftScoreHigher.turnOn();
   }
 
-    backgroundMusic.player.playbackRate = scalerange(
+  ambientSound.player.playbackRate = scalerange(
     Math.abs(ball.direction.x),
     0,
     5,
