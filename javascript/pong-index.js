@@ -39,6 +39,9 @@ import {
 import { clamp, scalerange, randomAdjust, boolToOnOff } from "./pong-util.js";
 //import * as Tone from "../lib/Tone.js";
 
+//STARTUP EVENTS
+ambientSound.play();
+
 //GAME OBJECTS///DON'T CHANGE THESE
 var updateInterval = 15; //game framerate
 var game = new Game();
@@ -59,9 +62,6 @@ paddleRight.htmlElement = document.getElementById("right-paddle");
 paddleArray.push(paddleRight);
 paddlesReset();
 //END OF GAME OBJECTS///
-
-//STARTUP EVENTS
-ambientSound.play();
 
 //RUNNING PROCESSES (updated every frame of the game)
 function gameProcess() {
