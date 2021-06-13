@@ -66,3 +66,8 @@ export var villageMusic = new soundFile("phaserDown2.mp3");
 soundArray.push(villageMusic);
 villageMusic.player.loop = true;
 villageMusic.player.volume.value = -16;
+
+export var backgroundSound = new soundFile("degroit3-loop.mp3");
+backgroundSound.player.volume.value = -16;
+soundArray.push(backgroundSound);
+
