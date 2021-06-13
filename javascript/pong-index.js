@@ -75,7 +75,7 @@ function gameProcess() {
     leftScoreHigher.turnOn();
   }
 
-    ambientSound.player.playbackRate = scalerange(
+    backgroundMusic.player.playbackRate = scalerange(
     Math.abs(ball.direction.x),
     0,
     5,
