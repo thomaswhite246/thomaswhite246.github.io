@@ -15,6 +15,7 @@ import {
   ambientSound,
   adventureMusic,
   villageMusic,
+  backgroundMusic, 
   playDeferredSounds
 } from "./pong-audio.js";
 //Defaults for game objects
