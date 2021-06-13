@@ -57,16 +57,16 @@ soundArray.push(ambientSound);
 ambientSound.player.loop = true; //turn on looping
 ambientSound.player.volume.value = -4; //turn down volume
 
-export var adventureMusic = new soundFile("detroit3-loop.mp3");
+export var rightscoreMusic = new soundFile("detroit3-loop.mp3");
 soundArray.push(adventureMusic);
 adventureMusic.player.loop = true;
 adventureMusic.player.volume.value = -16;
 
-export var villageMusic = new soundFile("phaserDown2.mp3");
+export var leftscoreMusic = new soundFile("phaserDown2.mp3");
 soundArray.push(villageMusic);
 villageMusic.player.loop = true;
 villageMusic.player.volume.value = -16;
 
 export var backgroundSound = new soundFile("degroit3-loop.mp3");
-backgroundSound.player.volume.value = -16;
 soundArray.push(backgroundSound);
+backgroundSound.player.volume.value = -16;
