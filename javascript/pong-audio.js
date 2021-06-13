@@ -55,19 +55,14 @@ soundArray.push(scoreSound);
 export var ambientSound = new soundFile("Adventure_Meme.mp3");
 soundArray.push(ambientSound);
 ambientSound.player.loop = true; //turn on looping
-ambientSound.player.volume.value = -4; //turn down volume
+ambientSound.player.volume.value = -20; //turn down volume
 
-export var rightscoreMusic = new soundFile("detroit3-loop.mp3");
+export var adventureMusic = new soundFile("Eight_Bit_Village_Loop.mp3");
 soundArray.push(adventureMusic);
 adventureMusic.player.loop = true;
-adventureMusic.player.volume.value = -40;
+adventureMusic.player.volume.value = -16;
 
-export var leftscoreMusic = new soundFile("phaserDown2.mp3");
+export var villageMusic = new soundFile("phaserDown2.mp3");
 soundArray.push(villageMusic);
 villageMusic.player.loop = true;
 villageMusic.player.volume.value = -16;
-
-export var backgroundSound = new soundFile("degroit3-loop.mp3");
-soundArray.push(backgroundSound);
-adventureMusic.player.loop = true;
-backgroundSound.player.volume.value = -16;
