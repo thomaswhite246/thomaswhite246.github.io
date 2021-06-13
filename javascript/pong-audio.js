@@ -69,4 +69,5 @@ villageMusic.player.volume.value = -16;
 
 export var backgroundSound = new soundFile("degroit3-loop.mp3");
 soundArray.push(backgroundSound);
+adventureMusic.player.loop = true;
 backgroundSound.player.volume.value = -16;
