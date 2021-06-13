@@ -13,8 +13,8 @@ import {
   paddleSound,
   scoreSound,
   ambientSound,
-  adventureMusic,
-  villageMusic,
+  scoreSound1,
+  scoreSound2,
   backgroundMusic, 
   playDeferredSounds
 } from "./pong-audio.js";
