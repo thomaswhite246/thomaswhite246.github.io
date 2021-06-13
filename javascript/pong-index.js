@@ -41,7 +41,7 @@ import { clamp, scalerange, randomAdjust, boolToOnOff } from "./pong-util.js";
 //import * as Tone from "../lib/Tone.js";
 
 //STARTUP EVENTS
-ambientSound.play();
+backgroundMusic.play();
 
 //GAME OBJECTS///DON'T CHANGE THESE
 var updateInterval = 15; //game framerate
