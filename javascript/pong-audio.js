@@ -60,7 +60,7 @@ ambientSound.player.volume.value = -20; //turn down volume
 export var adventureMusic = new soundFile("detroit3-loop.mp3");
 soundArray.push(adventureMusic);
 adventureMusic.player.loop = true;
-adventureMusic.player.volume.value = -16;
+adventureMusic.player.volume.value = -30;
 
 export var villageMusic = new soundFile("silence.mp3");
 soundArray.push(villageMusic);
