@@ -57,7 +57,7 @@ soundArray.push(ambientSound);
 ambientSound.player.loop = true; //turn on looping
 ambientSound.player.volume.value = -20; //turn down volume
 
-export var adventureMusic = new soundFile("Detroit.mp3");
+export var adventureMusic = new soundFile("silence.mp3");
 soundArray.push(adventureMusic);
 adventureMusic.player.loop = true;
 
@@ -65,3 +65,7 @@ export var villageMusic = new soundFile("silence.mp3");
 soundArray.push(villageMusic);
 villageMusic.player.loop = true;
 villageMusic.player.volume.value = -16;
+
+export var backgroundMusic = new soundFile("Detroit.mp3");
+soundArray.push(backgroundMusic);
+backgroundMusic.player.loop = true;
