@@ -15,6 +15,7 @@ import {
   ambientSound,
   adventureMusic,
   villageMusic,
+  backgroundMusic,
   playDeferredSounds
 } from "./pong-audio.js";
 //Defaults for game objects
@@ -61,7 +62,7 @@ paddlesReset();
 //END OF GAME OBJECTS///
 
 //STARTUP EVENTS
-adventureMusic.play();
+backgroundeMusic.play();
 
 //RUNNING PROCESSES (updated every frame of the game)
 function gameProcess() {
