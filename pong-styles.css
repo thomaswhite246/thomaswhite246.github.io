@@ -14,7 +14,7 @@ body {
   border: 5px solid black;
   left: 0;
   position: absolute;
-  background-image: url("graffiti_artists.jpg");
+  background-image: url:("mypicture.jpg");
   background-size: cover;
 }
 
