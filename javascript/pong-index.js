@@ -62,7 +62,7 @@ paddlesReset();
 //END OF GAME OBJECTS///
 
 //STARTUP EVENTS
-backgroundeMusic.play();
+backgroundMusic.play();
 
 //RUNNING PROCESSES (updated every frame of the game)
 function gameProcess() {
