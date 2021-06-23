@@ -49,7 +49,7 @@ soundArray.push(wallSound); //add sound to list of sounds
 export var paddleSound = new soundFile("Detroittap.mp3");
 soundArray.push(paddleSound);
 
-export var scoreSound = new soundFile("silence.mp3");
+export var scoreSound = new soundFile("browncar.mp3");
 soundArray.push(scoreSound);
 
 export var ambientSound = new soundFile("silence.mp3");
@@ -68,3 +68,7 @@ villageMusic.player.loop = false;
 export var backgroundMusic = new soundFile("Detroit.mp3");
 soundArray.push(backgroundMusic);
 backgroundMusic.player.loop = true;
+
+export var droneMusic = new soundFile("42hzdrone.mp3");
+soundArray.push(droneMusic);
+droneMusic.player.loop = true;
