@@ -16,6 +16,7 @@ import {
   adventureMusic,
   villageMusic,
   backgroundMusic,
+  droneMusic,
   playDeferredSounds
 } from "./pong-audio.js";
 //Defaults for game objects
@@ -63,6 +64,7 @@ paddlesReset();
 
 //STARTUP EVENTS
 backgroundMusic.play();
+droneMusic.play();
 
 //RUNNING PROCESSES (updated every frame of the game)
 function gameProcess() {
