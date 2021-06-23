@@ -69,6 +69,6 @@ export var backgroundMusic = new soundFile("Detroit.mp3");
 soundArray.push(backgroundMusic);
 backgroundMusic.player.loop = true;
 
-export var droneMusic = new soundFile("42hzdrone.mp3");
+export var droneMusic = new soundFile("drone.mp3");
 soundArray.push(droneMusic);
 droneMusic.player.loop = true;
